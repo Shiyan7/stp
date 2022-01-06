@@ -1,0 +1,19 @@
+extends ../layouts/default
+include ../helpers/mixins
+
+block variables
+	- const title = "ТЕПЛОВОЙ НАСОС ВОЗДУХ-ВОЗДУХ SUPREME CONTINENTAL COOPER&HUNTER CH-S12FTXAL 3,53-3,81 КВТ"
+
+block content
+	.site-container
+		include ../../blocks/modules/main-header/main-header
+		main.main
+			include ../../blocks/modules/card/card
+			include ../../blocks/modules/recommended-products/recommended-products
+			include ../../blocks/modules/recommended-articles/recommended-articles
+			include ../../blocks/modules/questions2/questions2
+		include ../../blocks/modules/footer/footer
+		include ../../blocks/modules/modal/modal
+block scripts
+	script(src="js/vendor.js")
+	script(src="js/main.js")

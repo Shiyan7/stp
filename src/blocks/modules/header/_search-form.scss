@@ -1,0 +1,39 @@
+.search-form {
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-family: "Roboto", sans-serif;
+    margin-right: 12px;
+    width: 402px;
+    &__input {
+        width: 100%;
+        height: 40px;
+        border: 1px solid #364453;
+        padding: 0 40px 0 12px;
+        border-radius: 6px;
+        outline: none;
+        background-color: transparent;
+        color: #c9cccf;
+        letter-spacing: 0.008em;
+        &::placeholder {
+            color: #c9cccf;
+        }
+    }
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 50%;
+        right: 8px;
+        padding: 3px;
+        transform: translateY(-50%);
+        border-radius: 4px;
+        padding-right: 0;
+        svg {
+            width: 24px;
+            height: 24px;
+        }
+    }
+}

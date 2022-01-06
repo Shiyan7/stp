@@ -1,0 +1,25 @@
+.section-title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 30px;
+    color: #222F3C;
+    text-transform: uppercase;
+    line-height: 28px;
+    &__line {
+        display: block;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover 7px;
+        &--left {
+            background-image: url("data:image/svg+xml,%3Csvg width='455' height='9' viewBox='0 0 455 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='1' y='1.12891' width='7' height='7' stroke='%23BB8E34'/%3E%3Crect width='419' height='0.5' transform='translate(36 4.37891)' fill='%23DEDEDE'/%3E%3C/svg%3E%0A");
+            background-position: left;
+        }
+        &--right {
+            background-image: url("data:image/svg+xml,%3Csvg width='455' height='9' viewBox='0 0 455 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='419' height='0.5' transform='translate(0 4.37891)' fill='%23DEDEDE'/%3E%3Crect x='447' y='1.12891' width='7' height='7' stroke='%23BB8E34'/%3E%3C/svg%3E%0A");
+            background-position: right;
+        }
+    }
+    span {
+        color: #27AE60;
+    }
+}

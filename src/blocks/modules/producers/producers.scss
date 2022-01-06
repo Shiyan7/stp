@@ -1,0 +1,71 @@
+.producers {
+    background-color: #f8fafb;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    &__container {
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+
+    &__title {
+        font-size: 24px;
+    }
+
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        color: #BB8E34;
+    }
+
+    &__link {
+        font-family: "Roboto", sans-serif;
+        font-size: 14px;
+        line-height: 28px;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__image {
+        object-fit: contain;
+    }
+
+    &-slider {
+        display: flex;
+        align-items: center;
+        padding: 0 40px;
+        &__wrapper {
+            align-items: center;
+        }
+        &__btn {
+            position: absolute;
+            background-color: #fff;
+            border-radius: 6px;
+            background-size: 8px 12px;
+            z-index: 2;
+            &--prev {
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+                background-image: url("data:image/svg+xml,%3Csvg width='8' height='13' viewBox='0 0 8 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.41 11.4045L2.83 6.81445L7.41 2.22445L6 0.814453L0 6.81445L6 12.8145L7.41 11.4045Z' fill='%23323232'/%3E%3C/svg%3E%0A");
+                &:hover {
+                    background-image: url("data:image/svg+xml,%3Csvg width='8' height='13' viewBox='0 0 8 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.41 11.4045L2.83 6.81445L7.41 2.22445L6 0.814453L0 6.81445L6 12.8145L7.41 11.4045Z' fill='%2327AE60'/%3E%3C/svg%3E%0A");
+                }
+            }
+            &--next {
+                top: 50%;
+                right: 0;
+                transform: translateY(-50%);
+                background-image: url("data:image/svg+xml,%3Csvg width='8' height='13' viewBox='0 0 8 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.59 11.4045L5.17 6.81445L0.59 2.22445L2 0.814453L8 6.81445L2 12.8145L0.59 11.4045Z' fill='%23323232'/%3E%3C/svg%3E%0A");
+                &:hover {
+                    background-image: url("data:image/svg+xml,%3Csvg width='8' height='13' viewBox='0 0 8 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.59 11.4045L5.17 6.81445L0.59 2.22445L2 0.814453L8 6.81445L2 12.8145L0.59 11.4045Z' fill='%2327AE60'/%3E%3C/svg%3E%0A");
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+.map {
+    display: flex;
+    align-items: center;
+    &__icon {
+        display: block;
+        flex: 0 0 42px;
+        height: 42px;
+        margin-right: 12px;
+        background-image: url(../img/location.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        &--2 {
+            background-image: url(../img/location2.png);
+        }
+    }
+
+    &__desc {
+        font-family: "Roboto", sans-serif;
+        line-height: 20px;
+        color: #fff;
+        padding-right: 35px;
+        span {
+            color: #798797;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+section.questions.lazy(data-bg="img/questions-bg.png")
+    .container.questions__container
+        h2.section-title.questions__title Остались вопросы? 
+            span Оставьте заявку!
+        form.questions-form(action="#")
+            label.questions-form__label
+                span Ваше имя
+                input.questions-form__input(type="text" name="Имя" placeholder="Вввод имени" required)
+            label.questions-form__label
+                span Номер телефона
+                input.questions-form__input.tell-mask(type="tel" name="Номер телефона" placeholder="8 (812)  345-67-89" required)
+            label.questions-form__label.questions-form__label--textarea
+                span Ваш вопрос
+                textarea.questions-form__input.questions-form__textarea(name="Сообщение" placeholder="Сообщение")
+            .questions-form__bottom
+                p.questions-form__desc Гарантируем конфидициальность и целевое использование данных
+                button.btn-reset.questions-form__btn Отправить

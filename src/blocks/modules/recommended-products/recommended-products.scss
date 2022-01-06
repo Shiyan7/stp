@@ -1,0 +1,17 @@
+.recommended-products {
+    padding-bottom: 0;
+    &__container {
+        padding-top: 40px;
+    }
+
+    &-slider {
+        padding-bottom: 40px;
+        position: relative;
+        max-width: 1920px;
+        overflow: visible;
+        margin: 0 auto;
+    }
+    &__title {
+        text-align: center;
+    }
+}

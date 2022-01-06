@@ -1,0 +1,64 @@
+.mail {
+    display: flex;
+    align-items: center;
+    
+    &__icon {
+        display: block;
+        width: 42px;
+        height: 42px;
+        margin-right: 12px;
+        background-image: url(../img/mail.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        &--2 {
+            background-image: url(../img/mail2.png);
+        }
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        font-family: "Roboto", sans-serif;
+        margin-right: 12px;
+        color: #c9cccf;
+    }
+
+    &__value {
+        font-family: "Roboto", sans-serif;
+        line-height: 22px;
+        &--bold {
+            color: #fff !important;
+        }
+    }
+
+    &__desc {
+        margin-top: 1px;
+        font-family: "Roboto", sans-serif;
+        line-height: 20px;
+        color: #798797;
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        padding: 12px;
+        background-color: #1F2B38;
+        border-radius: 6px;
+        margin-left: 20px;
+        text-transform: uppercase;
+        font-weight: 700;
+        transition: background-color 0.3s;
+        
+        &:hover {
+            background-color: #18222d;
+        }
+
+        svg {
+            width: 15px;
+            height: 15px;
+            margin-right: 10px;
+            fill:  #27AE60;
+        }
+    }
+}

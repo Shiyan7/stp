@@ -1,0 +1,46 @@
+.option-widget {
+    display: flex;
+    align-items: center;
+    &__image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 56px;
+        height: 56px;
+        border: 2px solid #EBEDEE;
+        border-radius: 6px;
+        margin-right: 18px;
+        svg {
+            width: 22px;
+            height: 24px;
+        }
+    }
+    &__text {
+        display: flex;
+        flex-direction: column;
+        font-family: "Roboto", sans-serif;
+    }
+    &__desc {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        line-height: 19px;
+        color: #3F464E;
+        letter-spacing: 0.008em;
+        svg {
+            width: 20px;
+            height: 20px;
+            margin-right: 12px;
+        }
+    }
+    &__title {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 20px;
+        color: #BB8E34;
+        margin-bottom: 4px;
+    }
+    &__price {
+        margin-left: 16px;
+    }
+}

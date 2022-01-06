@@ -1,0 +1,15 @@
+.map-widget {
+    font-family: "Roboto", sans-serif;
+    color: #BB8E34;
+    background-color: #F9FAFB;
+    border-left: 4px solid rgba(187, 142, 52, 0.5);
+    padding: 7px 0 7px 10px;
+    &__title {
+        margin: 0;
+        font-size: 12px;
+        line-height: 17px;
+        padding-right: 3px;
+        color: #222F3C;
+        font-weight: 400;
+    }
+}

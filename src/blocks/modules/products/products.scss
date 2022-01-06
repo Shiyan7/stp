@@ -1,0 +1,256 @@
+.products {
+    background-color: #f8fAfB;
+    padding-bottom: 40px;
+    &__container {
+        padding-top: 24px;
+        padding-bottom: 40px;
+    }
+
+    &__list {
+        display: flex;
+        margin-bottom: 24px;
+    }
+
+    &-slider {
+        display: none;
+        position: relative;
+        max-width: 1920px;
+        overflow: visible;
+        margin: 0 auto;
+        &.tabs__content--active {
+            display: block;
+        }
+        &__controls {
+            width: calc(100% - 40px);
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__btn {
+            display: block;
+            width: 8px;
+            height: 14px;
+            background-color: transparent;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            &--prev {
+                background-image: url("data:image/svg+xml,%3Csvg width='8' height='15' viewBox='0 0 8 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.64465 2.85588L2.9309 7.56962L7.64465 12.2834C8.11845 12.7572 8.11845 13.5225 7.64465 13.9964C7.17084 14.4702 6.40547 14.4702 5.93166 13.9964L0.355353 8.42004C-0.118451 7.94623 -0.118451 7.18086 0.355353 6.70705L5.93166 1.13074C6.40547 0.65694 7.17084 0.65694 7.64465 1.13074C8.1063 1.60455 8.11845 2.38207 7.64465 2.85588Z' fill='%23D1D6D9'/%3E%3C/svg%3E%0A");
+            }
+
+            &--next {
+                background-image: url("data:image/svg+xml,%3Csvg width='8' height='15' viewBox='0 0 8 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.355353 2.85588L5.0691 7.56962L0.355353 12.2834C-0.118451 12.7572 -0.118451 13.5225 0.355353 13.9964C0.829157 14.4702 1.59453 14.4702 2.06834 13.9964L7.64465 8.42004C8.11845 7.94623 8.11845 7.18086 7.64465 6.70705L2.06834 1.13074C1.59453 0.65694 0.829157 0.65694 0.355353 1.13074C-0.106302 1.60455 -0.118451 2.38207 0.355353 2.85588Z' fill='%23D1D6D9'/%3E%3C/svg%3E%0A");
+            }
+        }
+    }
+}
+
+.tabs {
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #C9CCCF;
+    }
+
+    &__item {
+        width: 33.333%;
+        margin-bottom: -1px;
+    }
+
+    &__btn {
+        text-transform: uppercase;
+        width: 100%;
+        font-size: 20px;
+        line-height: 28px;
+        padding: 12px 0 24px;
+        color: #798797;
+        border-bottom: 4px solid transparent;
+        transition: border 0.3s;
+        &--active {
+            border-bottom: 4px solid #27AE60;
+            color: #222F3C;
+        }
+    }
+}
+
+.product {
+    position: relative;
+    background-color: #fff;
+    border-radius: 3px;
+    padding-bottom: 18px;
+    transition: box-shadow 0.3s;
+    max-width: 270px;
+    &:hover {
+        box-shadow: 0 6px 24px 0px #9da3a8a0;
+
+        .product-info {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    &-info {
+        margin-top: 20px;
+        border-top: 1px solid #F3F3F3;
+        padding: 12px 23px 20px;
+        position: absolute;
+        top: calc(100% - 20px);
+        width: calc(100% - 46px);
+        height: auto;
+        left: 0;
+        background-color: #fff;
+        opacity: 0;
+        visibility: hidden;
+        box-shadow: 0 3px 5px 0px #9da3a8a0;
+        transition: opacity 0.3s, visibility 0.3s;
+
+        &__item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            &:not(:last-child) {
+                margin-bottom: 10px;
+            }
+        }
+
+        &__desc {
+            font-family: "Roboto", sans-serif;
+            color: #798797;
+            line-height: 18px;
+            letter-spacing: 0.008em;
+        }
+
+        &__title {
+            display: flex;
+            align-items: center;
+            font-family: "Roboto", sans-serif;
+            color: #1f2b38;
+            letter-spacing: 0.008em;
+            line-height: 18px;
+
+            span {
+                display: block;
+                color: #798797;
+                line-height: 18px;
+                letter-spacing: 0.008em;
+                margin: 0 4px;
+            }
+
+            svg {
+                width: 18px;
+                height: 18px;
+                margin-right: 4px;
+            }
+        }
+    }
+
+    &__image {
+        position: relative;
+
+        img {
+            width: 100%;
+            height: 237px;
+            object-fit: contain;
+        }
+    }
+
+    &__title {
+        font-weight: 400;
+        display: block;
+        margin: 0 0 12px;
+        padding: 0 30px 0 24px;
+        font-family: "Roboto", sans-serif;
+        font-size: 16px;
+        color: #222f3c;
+        line-height: 19.5px;
+    }
+
+    &__bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 13px;
+        padding: 0 24px;
+    }
+
+    &__btns {
+        display: flex;
+        align-items: center;
+        color: #fff;
+        padding: 0 24px;
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 12px 0;
+        width: 100%;
+        font-size: 14px;
+
+        &:not(:last-child) {
+            margin-right: 8px;
+        }
+
+        &--buy {
+            width: 86%;
+            background-color: #BB8E34;
+
+            &:hover {
+                background-color: #987328;
+            }
+        }
+
+        svg {
+            width: 16px;
+            height: 16px;
+            margin-right: 10px;
+            fill: #fff;
+        }
+    }
+
+    &__price {
+        font-family: "Roboto", sans-serif;
+        color: #798797;
+        line-height: 18px;
+        letter-spacing: 0.008em;
+
+        span {
+            margin-top: 4px;
+            font-family: "RobotoCondensed", sans-serif;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 16px;
+            color: #222F3C;
+            display: block;
+        }
+    }
+
+    &__favorite {
+        display: block;
+        position: absolute;
+        top: 11px;
+        right: 16px;
+        width: 24px;
+        height: 24px;
+    }
+
+    &__zoom {
+        display: block;
+        position: absolute;
+        bottom: 11px;
+        right: 16px;
+        width: 30px;
+        height: 30px;
+    }
+}
+
+.fslightbox-nav {
+    display: none;
+}
+
+.fslightbox-slide-btn-container {
+    display: none !important;
+}

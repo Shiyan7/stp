@@ -1,0 +1,63 @@
+.card-social {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 12px;
+    margin-top: 12px;
+    border-top: 1px dashed #F0F2F2;
+    &__item {
+        color: #AFB6BA;
+        margin-bottom: 5px;
+        &:not(:last-child) {
+            margin-right: auto;
+        }
+    }
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #dedede;
+        border-radius: 3px;
+        padding: 4px 7px;
+        font-size: 12px;
+        font-family: "Roboto", sans-serif;
+        line-height: 20px;
+        transition: background-color 0.3s, color 0.3s, border 0.3s;
+        &--fb:hover {
+            background-color: #3b5998;
+        }
+        &--vk:hover {
+            background-color: #6e8cca;
+        }
+        &--tw:hover {
+            background-color: #00aced;
+        }
+        &--ok:hover {
+            background-color: #ffa216;
+        }
+        &--ig:hover {
+            background-color: #c398a0;
+        }
+        &--wa:hover {
+            background-color: #27AE60;
+        }
+        &--el:hover {
+            background-color: #798797;
+        }
+        &:hover {
+            color: #fff !important;
+            border: 1px solid transparent;
+            svg {
+                fill: #fff;
+            }
+        }
+        svg {
+            flex-shrink: 0;
+            width: 15px;
+            height: 15px;
+            margin-right: 5px;
+            fill: #afb6ba;
+            transition: fill 0.3s;
+        }
+    }
+}

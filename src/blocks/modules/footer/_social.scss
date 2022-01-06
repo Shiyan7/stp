@@ -1,0 +1,51 @@
+.social {
+    &__list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: 13px;
+        }
+    }
+
+    &__link {
+        svg {
+            width: 20px;
+            height: 20px;
+            fill: #798797;
+            transition: fill 0.3s;
+        }
+        &--vk:hover {
+            svg {
+                fill: #7294C7;
+            }
+        }
+        &--tw:hover {
+            svg {
+                fill: #55ACE3;
+            }
+        }
+        &--ok:hover {
+            svg {
+                fill: #F79A38;
+            }
+        }
+        &--fb:hover {
+            svg {
+                fill: #7294C7;
+            }
+        }
+        &--ig:hover {
+            svg {
+                fill: #C83B78;
+            }
+        }
+        &--yt:hover {
+            svg {
+                fill: #F40000;;
+            }
+        }
+    }
+}

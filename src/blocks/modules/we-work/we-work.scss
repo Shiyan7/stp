@@ -1,0 +1,129 @@
+.we-work {
+    background-color: #253342;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: -1px;
+    &__container {
+        padding-top: 48px;
+    }
+
+    &__title {
+        text-align: center;
+        color: #fff;
+        font-size: 40px;
+        line-height: 28px;
+        margin-bottom: 79px;
+    }
+
+    &-slider {
+        position: relative;
+        overflow: visible;
+        padding-right: 40px;
+        &__controls {
+            display: none;
+            align-items: center;
+            margin-top: 33px;
+            justify-content: space-between;
+        }
+        &:before {
+            @include pseudo();
+            position: absolute;
+            top: -14px;
+            left: -95px;
+            width: calc(100% + 90px);
+            height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg width='1213' height='253' viewBox='0 0 1213 253' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M83 1.81445H1172C1194.09 1.81445 1212 19.7231 1212 41.8145V151.814C1212 173.906 1194.09 191.814 1172 191.814H31C14.4315 191.814 1 205.246 1 221.814V221.814C1 238.383 14.4315 251.814 31 251.814H884' stroke='%23BB8E34' stroke-opacity='0.5' stroke-dasharray='8 4'/%3E%3C/svg%3E%0A");
+            background-repeat: no-repeat;
+            background-size: 100% 250px;
+        }
+        &__wrapper {
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        &__btn {
+            display: block;
+            width: 30px;
+            height: 30px;
+            background-color: transparent;
+            background-repeat: no-repeat;
+            background-size: 8px 14px;
+            &--prev {
+                background-image: url("data:image/svg+xml,%3Csvg width='8' height='15' viewBox='0 0 8 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.64465 2.85588L2.9309 7.56962L7.64465 12.2834C8.11845 12.7572 8.11845 13.5225 7.64465 13.9964C7.17084 14.4702 6.40547 14.4702 5.93166 13.9964L0.355353 8.42004C-0.118451 7.94623 -0.118451 7.18086 0.355353 6.70705L5.93166 1.13074C6.40547 0.65694 7.17084 0.65694 7.64465 1.13074C8.1063 1.60455 8.11845 2.38207 7.64465 2.85588Z' fill='%235E7288'/%3E%3C/svg%3E%0A");
+            }
+            &--next {
+                background-image: url("data:image/svg+xml,%3Csvg width='8' height='15' viewBox='0 0 8 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.355353 2.85588L5.0691 7.56962L0.355353 12.2834C-0.118451 12.7572 -0.118451 13.5225 0.355353 13.9964C0.829157 14.4702 1.59453 14.4702 2.06834 13.9964L7.64465 8.42004C8.11845 7.94623 8.11845 7.18086 7.64465 6.70705L2.06834 1.13074C1.59453 0.65694 0.829157 0.65694 0.355353 1.13074C-0.106302 1.60455 -0.118451 2.38207 0.355353 2.85588Z' fill='%235E7288'/%3E%3C/svg%3E%0A");
+            }
+        }
+    }
+
+    &__slide {
+        position: relative;
+        width: calc(290px - 48px);
+        height: auto;
+        padding: 20px 24px;
+        background: linear-gradient(0deg, rgba(34, 47, 60, 0.75), rgba(34, 47, 60, 0.75));
+        border-radius: 0px 16px 16px 16px;
+        counter-increment: section;
+        margin-bottom: 98px;
+        &:before {
+            @include pseudo();
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 55px;
+            height: 55px;
+            top: -40px;
+            left: -75px;
+            content: '0' counter(section);
+            font-weight: 700;
+            font-size: 27px;
+            line-height: 28px;
+            background-image: url("data:image/svg+xml,%3Csvg width='55' height='55' viewBox='0 0 55 55' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='4.5' y='4.81445' width='46' height='46' rx='14' fill='%23212F3E' fill-opacity='0.9'/%3E%3Cpath d='M16.5 1.81445H38.5C46.7843 1.81445 53.5 8.53018 53.5 16.8145V53.8145H16.5C8.21573 53.8145 1.5 47.0987 1.5 38.8145V16.8145C1.5 8.53018 8.21573 1.81445 16.5 1.81445Z' stroke='%23BB8E34' stroke-width='2'/%3E%3Cpath d='M16.5 1.81445H38.5C46.7843 1.81445 53.5 8.53018 53.5 16.8145V53.8145H16.5C8.21573 53.8145 1.5 47.0987 1.5 38.8145V16.8145C1.5 8.53018 8.21573 1.81445 16.5 1.81445Z' stroke='url(%23paint0_linear)' stroke-width='2'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear' x1='54.5' y1='54.8145' x2='27.5' y2='27.8145' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23F7F896'/%3E%3Cstop offset='1' stop-color='%23BB8E34' stop-opacity='0'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A");
+            color: #fff;
+        }
+        &:after {
+            @include pseudo();
+            position: absolute;
+            top: -46px;
+            left:  -8px;
+            width: 17px;
+            height: 187px;
+            background-image: url("data:image/svg+xml,%3Csvg width='16' height='162' viewBox='0 0 16 162' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='21.8145' width='15' height='15' rx='7.5' fill='%2346494E'/%3E%3Crect x='3.5' y='24.8145' width='9' height='9' rx='4.5' fill='%23BB8E34'/%3E%3Cline x1='7.5' y1='18.8201' x2='7.5' y2='-25.1913' stroke='url(%23paint0_linear)'/%3E%3Cline y1='-0.5' x2='122' y2='-0.5' transform='matrix(0 1 1 0 8 39.8086)' stroke='url(%23paint1_linear)'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear' x1='8' y1='-14.6855' x2='8' y2='15.3145' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23BB8E34' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23BB8E34'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint1_linear' x1='92.8779' y1='0' x2='9.7176' y2='0' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23BB8E34' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23BB8E34'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A");
+            background-repeat: no-repeat;
+            background-position: top;
+            background-size: cover;
+        }
+    }
+
+    &__name {
+        margin: 0;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 20px;
+        color: #f6c666;
+        margin-bottom: 12px;
+        text-transform: uppercase;
+    }
+
+    &__desc {
+        margin: 0;
+        max-width: 230px;
+        color: #fff;
+        font-family: "Roboto", sans-serif;
+        font-size: 14px;
+        line-height: 18px;
+        padding-bottom: 12px;
+        margin-bottom: 12px;
+        border-bottom: 1px solid rgba(#798797, 0.2);
+    }
+
+    &__term {
+        font-family: "Roboto", sans-serif;
+        font-style: italic;
+        font-size: 14px;
+        line-height: 16px;
+        color: rgba(201, 204, 207, 0.65);
+    }
+}

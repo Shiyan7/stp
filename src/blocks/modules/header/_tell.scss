@@ -1,0 +1,69 @@
+.tell {
+    display: flex;
+    align-items: center;
+
+    &__icon {
+        display: block;
+        width: 42px;
+        height: 42px;
+        margin-right: 12px;
+        background-image: url(../img/tell.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        &--2 {
+            background-image: url(../img/tell2.png);
+        }
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        font-family: "Roboto", sans-serif;
+        margin-right: 25px;
+    }
+
+    &__value {
+        display: flex;
+        align-items: center;
+        font-family: "Roboto", sans-serif;
+        color: #c9cccf;
+        line-height: 22px;
+        &--bold {
+            font-weight: 500;
+            font-size: 16px;
+            color: #fff;
+        }
+    }
+
+    &__link {
+        position: relative;
+        padding-right: 16px;
+        margin-right: 16px;
+        line-height: 20px;
+        &:not(:last-child) {
+            &:after {
+                content: "";
+                display: inline-block;
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 1px;
+                height: 14px;
+                background-color: rgba(157, 163, 168, 0.25);
+            }
+        }
+    }
+
+    &__desc {
+        margin-top: 1px;
+        font-family: "Roboto", sans-serif;
+        line-height: 20px;
+        color: #798797;
+    }
+
+    &__btn {
+        text-align: left;
+        max-width: 84px;
+    }
+}

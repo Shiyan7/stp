@@ -1,0 +1,27 @@
+.thank-modal {
+    display: flex;
+    align-items: center;
+    svg {
+        width: 48px;
+        height: 48px;
+    }
+    &__text {
+        padding-left: 36px;
+        margin-left: 36px;
+        border-left: 1px dashed rgba(196, 196, 196, 0.75);
+    }
+    &__title {
+        color: #BB8E34;
+        margin-bottom: 15px;
+        span {
+            color: #27AE60;
+        }
+    }
+    &__desc {
+        margin: 0;
+        max-width: 400px;
+        font-size: 14px;
+        line-height: 22px;
+        color: rgba(34, 47, 60, 0.75);
+    }
+}

@@ -1,0 +1,39 @@
+.burger {
+    display: none;
+    flex: 0 0 48px;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    height: 48px;
+    background-color: #27ae60;
+    z-index: 101;
+    transition: transform 0.2s;
+    &__line {
+        position: absolute;
+        top: 16px;
+        left: 50%;
+        width: 18px;
+        height: 2px;
+        background-color: #fff;
+        opacity: 1;
+        transform: translateX(-50%);
+    }
+    &:before, &:after {
+        @include pseudo();
+        position: absolute;
+        left: 50%;
+        width: 18px;
+        height: 2px;
+        background-color: #fff;
+        transform: translateX(-50%);
+    }
+    &::before {
+        top: 22px;
+    }
+    &::after {
+        bottom: 18px;
+    }
+    &-close {
+        transform: rotate(90deg);
+    }
+}

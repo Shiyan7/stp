@@ -1,0 +1,49 @@
+.video {
+    display: inline-block;
+    background-color: #EBEDEE;
+}
+
+.video__iframe {
+    display: block;
+    width: 100%;
+    min-height: calc(100% - 2px);
+    border: none;
+    padding: 0;
+    object-fit: cover;
+}
+
+.video__image {
+    width: 100%;
+    height: calc(100% - 2px);
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.video-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.video-play-shape {
+    fill: #212121;
+    fill-opacity: 0.8;
+}
+
+.video-play-icon {
+    fill: #ffffff;
+}
+
+.video-play:focus {
+    outline: none;
+}
+
+.video:hover .video-play-shape,
+.video:focus .video-play-shape {
+    fill: #ff0000;
+    fill-opacity: 1;
+}

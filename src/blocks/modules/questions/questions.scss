@@ -1,0 +1,95 @@
+.questions {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #27AE60;
+    &__container {
+        padding-top: 42px;
+        padding-bottom: 32px;
+    }
+
+    &__title {
+        text-align: center;
+        margin-bottom: 30px;
+        color: #fff;
+        span {
+            color: #f7f896;
+        }
+    }
+
+    &-form {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 664px;
+        margin: 0 auto;
+        &__label {
+            display: flex;
+            flex-direction: column;
+            width: calc(50% - 24px);
+            margin: 0 12px 12px;
+            span {
+                line-height: 22px;
+                color: #fff;
+                margin-bottom: 6px;
+            }
+            &--textarea {
+                width: 100%;
+            }
+        }
+        &__input {
+            padding: 12px;
+            height: 20px;
+            border-radius: 3px;
+            border: none;
+            outline: none;
+            &::placeholder {
+                color: rgba(121, 135, 151, 0.45);
+            }
+        }
+        &__textarea {
+            resize: none;
+            padding: 12px;
+            height: 74px;
+        }
+        &__bottom {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            margin: 4px 12px 0;
+            width: 100%;
+        }
+
+        &__desc {
+            display: flex;
+            align-items: center;
+            margin: 0 0 10px;
+            font-family: "Roboto", sans-serif;
+            max-width: 379px;
+            padding-right: 30px;
+            font-style: italic;
+            line-height: 19px;
+            color: rgba(255, 255, 255, 0.65);
+            svg {
+                width: 20px;
+                height: 20px;
+                margin-right: 10px;
+            }
+        }
+
+        &__btn {
+            padding: 15px 48px;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 13px;
+            text-transform: uppercase;
+            color: #222F3C;
+            background-color: #F7F896;
+            border-radius: 6px;
+            transition: background-color 0.3s;
+            &:hover {
+                background-color: #d9db4c;
+            }
+        }
+    }
+}

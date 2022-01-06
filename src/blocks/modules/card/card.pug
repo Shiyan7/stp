@@ -1,0 +1,203 @@
+section.card
+    .breadcrumbs
+        .container.breadcrumbs__container
+            ul.breadcrumbs__list.list-reset
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="/")
+                        +icon("home")
+                        |Главная
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="#") Каталог оборудования
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="#") Водонагреватели
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="#") Проточные водонагреватели
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="#") Проточный водонагреватель DCE-X 6/8 Premium STIEBEL ELTRON (АРТ. 238158)
+    .container.card-content.tabs
+        .card__top
+            h1.card__title.section-title ТЕПЛОВОЙ НАСОС ВОЗДУХ-ВОЗДУХ SUPREME CONTINENTAL COOPER&HUNTER CH-S12FTXAL 3,53-3,81 КВТ
+            .card__brand
+                img(src="img/brand-1.png", alt="Cooper & Hunter")
+        .card-info
+            .card-info__list
+                .card-info__item
+                    span.card-info__desc Артикул:
+                    span.card-info__value CH-S12FTXAL
+                .card-info__item
+                    span.card-info__desc Производитель:
+                    span.card-info__value COOPER-HUNTER
+                .card-info__item
+                    span.card-info__desc Страна:
+                    span.card-info__value
+                        span.country.country-us
+                        |USA
+                .card-info__item.card-info__in-stock
+                    span.card-info__desc Статус:
+                    span.card-info__value 
+                        |Есть в наличии
+                        +icon("in-stock")
+                .card-info__item
+                    span.card-info__desc Рейтинг:
+                    span.card-info__value
+                        +icon("rating-icon")
+                        |3/5
+            button.btn-reset.card-info__roll-up
+                +icon("right2")
+                span Свернуть
+                +icon("right2")
+        .card-content__top
+            .card-content__left
+                .swiper-container.card-slider__main
+                    span.sticker.sticker--new Новинка!
+                    button.btn-reset.product__favorite.card__favorite
+                        +icon("favorite")
+                    .swiper-wrapper.card-slider__wrapper
+                        .swiper-slide.card-slider__slide
+                            a(data-fslightbox="card" href="img/card-1.jpg")
+                                img(src="img/card-1.jpg", alt="")
+                        .swiper-slide.card-slider__slide
+                            a(data-fslightbox="card" href="img/product-1.jpg")
+                                img(src="img/product-1.jpg", alt="")
+                        .swiper-slide.card-slider__slide
+                            a(data-fslightbox="card" href="img/product-2.jpg")
+                                img(src="img/product-2.jpg", alt="")
+                        .swiper-slide.card-slider__slide
+                            a(data-fslightbox="card" href="img/product-3.jpg")
+                                img(src="img/product-3.jpg", alt="")
+                        .swiper-slide.card-slider__slide
+                            a(data-fslightbox="card" href="img/product-4.jpg")
+                                img(src="img/product-4.jpg", alt="")
+                        .swiper-slide.card-slider__slide
+                            a(data-fslightbox="card" href="img/card-1.jpg")
+                                img(src="img/card-1.jpg", alt="")
+                        .swiper-slide.card-slider__slide
+                            a(data-fslightbox="card" href="img/product-1.jpg")
+                                img(src="img/product-1.jpg", alt="")
+                    button.btn-reset.slider-controls__btn.slider-controls__btn--prev.card-slider__btn.card-slider__btn--prev
+                    button.btn-reset.slider-controls__btn.slider-controls__btn--next.card-slider__btn.card-slider__btn--next
+                    .swiper-scrollbar.card-slider__scrollbar
+                .swiper-container.card-slider__nav
+                    .swiper-wrapper.card-slider__wrapper
+                        .swiper-slide.card-slider__slide
+                            img(src="img/card-1.jpg", alt="")
+                        .swiper-slide.card-slider__slide
+                            img(src="img/product-1.jpg", alt="")
+                        .swiper-slide.card-slider__slide
+                            img(src="img/product-2.jpg", alt="")
+                        .swiper-slide.card-slider__slide
+                            img(src="img/product-3.jpg", alt="")
+                        .swiper-slide.card-slider__slide
+                            img(src="img/product-4.jpg", alt="")
+                        .swiper-slide.card-slider__slide
+                            img(src="img/card-1.jpg", alt="")
+                        .swiper-slide.card-slider__slide
+                            img(src="img/product-1.jpg", alt="")
+            .card-content__right
+                .card-details
+                    .card-details__top
+                        .price.card__price
+                            .price-sum(data-sum="7 300.00")
+                                +icon("basket")
+                                .price-sum__text
+                                    span.price-sum__desc Цена за шт
+                                    span.price-sum__title.rub 7 300.00
+                            .price__sep &times;
+                            .stepper.price__stepper
+                                label.stepper__field
+                                    input.stepper__input(type="text" value="1" maxlength="3")
+                                    span.stepper__text шт.
+                                .stepper__btns
+                                    button.btn-reset.stepper__btn.stepper__btn--down(tabindex="-1" aria-label="Уменшить количество")
+                                        svg(width="9" height="2" viewBox="0 0 9 2" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                            path(d="M7.83337 1.83317C4.09752 1.83317 5.39495 1.83317 1.16671 1.83317C0.708374 1.83317 0.333374 1.45817 0.333374 0.999838C0.333374 0.541504 0.708374 0.166504 1.16671 0.166504C4.90256 0.166504 3.60513 0.166504 7.83337 0.166504C8.29171 0.166504 8.66671 0.541504 8.66671 0.999838C8.66671 1.45817 8.29171 1.83317 7.83337 1.83317Z" fill="#C4C4C4")
+                                    button.btn-reset.stepper__btn.stepper__btn--up(tabindex="-1" aria-label="Увеличить количество")
+                                        svg(width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                            path(d="M8.16669 5.8335H5.66669V8.3335C5.66669 8.79183 5.29169 9.16683 4.83335 9.16683C4.37502 9.16683 4.00002 8.79183 4.00002 8.3335V5.8335H1.50002C1.04169 5.8335 0.666687 5.4585 0.666687 5.00016C0.666687 4.54183 1.04169 4.16683 1.50002 4.16683H4.00002V1.66683C4.00002 1.2085 4.37502 0.833496 4.83335 0.833496C5.29169 0.833496 5.66669 1.2085 5.66669 1.66683V4.16683H8.16669C8.62502 4.16683 9.00002 4.54183 9.00002 5.00016C9.00002 5.4585 8.62502 5.8335 8.16669 5.8335Z" fill="#C4C4C4")
+                            .price__sep &equals;
+                            .price__total.rub 7 300.00
+                        .card-btns
+                            button.btn-reset.product__link.primary-btn.card__btn.modal-btn(data-graph-animation="fedIn" data-graph-path="third" data-graph-speed="0")
+                                +icon("basket")
+                                |Добавить в корзину
+                            button.btn-reset.product__link.primary-btn.product__link--buy.card__btn.modal-btn(data-graph-animation="fedIn" data-graph-path="third" data-graph-speed="0")
+                                +icon("buy")
+                                |Купить в один клик
+                        .found-cheaper
+                            span.found-cheaper__desc Нашли дешевле? 
+                            button.btn-reset.found-cheaper__btn.modal-btn(data-graph-animation="fedIn" data-graph-path="second" data-graph-speed="0")
+                                +icon("mail2")
+                                |Напишите нам! 
+                    .card-ways.show
+                        button.btn-reset.card-ways__btn
+                            +icon("delivery")
+                            span.card-ways__title Способы получения заказа
+                            +icon("right2")
+                        .card-ways__content
+                            .card-ways__row
+                                span.card-ways__desc Минимальная стоимость заказа:
+                                span.card-ways__value 3000р
+                            .card-ways__row
+                                span.card-ways__desc Бесплатный самовывоз:
+                                span.card-ways__value 1-60 дней
+                            .map-widget.card__map-widget
+                                h3.map-widget__title г. Санкт-Петербург Выборгскоешоссе, д.212 Строение №8. 
+                                a.map-widget__link(href="#") Посмотреть на карте!
+                            .card-ways__row
+                                span.card-ways__desc Доставка в пределах КАД:
+                                span.card-ways__value 600р, при заказе от 3000р! 
+                            .card-ways__row
+                                span.card-ways__desc Доставка за пределами КАД: 
+                                span.card-ways__value 600р +40р за 1 км при заказе от 3000р! 
+                            .card-ways__row
+                                span.card-ways__desc Доставка транспортными компаниями по России
+                                span.card-ways__value От 900р, в зависимости товара и тарифа перевозчика!
+                ul.card-social.list-reset
+                    li.card-social__item
+                        a.card-social__link.card-social__link--fb(data-social="facebook" href="#")
+                            +icon("fb2")
+                            |Share
+                    li.card-social__item
+                        a.card-social__link.card-social__link--vk(data-social="vkontakte" href="#")
+                            +icon("vk")
+                            |Share
+                    li.card-social__item
+                        a.card-social__link.card-social__link--tw(data-social="twitter" href="#")
+                            +icon("tw")
+                            |Tweet
+                    li.card-social__item
+                        a.card-social__link.card-social__link--ok(data-social="odnoklassniki" href="#")
+                            +icon("ok")
+                            |Share
+                    li.card-social__item
+                        a.card-social__link.card-social__link--ig(data-social="telegram" href="#")
+                            +icon("ig")
+                            |Publicate
+                    li.card-social__item
+                        a.card-social__link.card-social__link--wa(data-social="whatsapp" href="#")
+                            +icon("whatsapp")
+                            |Publicate
+                    li.card-social__item
+                        a.card-social__link.card-social__link--el(data-social="moimir" href="#")
+                            +icon("email2")
+                            |Email
+        ul.tabs__list.list-reset
+            li.tabs__item.info-tabs__item
+                button.btn-reset.tabs__btn.tabs__btn--active(data-tabs-path="description") Описание товара
+            li.tabs__item.info-tabs__item
+                button.btn-reset.tabs__btn(data-tabs-path="characteristics") характеристики
+            li.tabs__item.info-tabs__item
+                button.btn-reset.tabs__btn(data-tabs-path="questions") вопросы
+        .tabs__content.info-card.tabs__content--active(data-tabs-target="description")
+            h3.info__subtitle.section-title.info-card__subtitle Описание товара ТЕПЛОВОЙ НАСОС ВОЗДУХ-ВОЗДУХ SUPREME CONTINENTAL COOPER&HUNTER CH-S12FTXAL 3,53-3,81 КВТ
+            p.info__desc Для создания уютной атмосферы в своем доме или квартире, стоит правильно подобрать пол. Это сложный и длительный процесс, ведь требуется учитывать массу факторов: начиная от возможного дизайна и заканчивая качеством материалов, которые используются для создания пола и надежности конструкций. Так почему все больше людей предпочитают купить водяной теплый пол? С чем это связано?
+            ul.info__list.list-reset
+                li.info__item Во-первых, пол монтируется из качественных и экологически безопасных материалов, которые не загрязняют внутреннюю среду или микроклимат в доме.
+                li.info__item Купить такой пол стоит и потому, что он является современной отопительной системой, которая может стать не только альтернативным, но еще и главным источником тепла. Тем более, стоимость водяного теплого пола является очень выгодной.
+                li.info__item А еще причина его популярности состоит в том, что в процессе эксплуатации, благодаря совершенной системе отопления, значительно снижаются расходы на электрическую энергию. Если говорить о зданиях со стандартной высотой, то это до 25 % экономии.
+                li.info__item Стоимость данного пола — это не единственное преимущество, которое толкает выбирать именно такую систему отопления. Ведь с его помощью можно сделать обогрев более равномерным и эффективным. На открытой поверхности нет горячих предметов, которые могут потенциально воспламениться, а это хорошая гарантия избежать возможного пожара.
+                li.info__item На продукцию предоставляются гарантийные обязательства, что являются важным подтверждением надежности конструкции. Поэтому такой вариант подойдет практически всем.
+                li.info__item Стоит сказать и о том, что купить водяной теплый пол выгодно еще и потому, что он имеет эстетический внешний вид, и идеально вписывается в практически любой дизайн интерьера. И все тепловые контуры скрываются под покрытием, поэтому совершенно не будут влиять на внешний вид квартиры или дома.
+                li.info__item Системы обогрева прослужат на протяжении длительного времени, эксперты утверждают, что их эксплуатационный период может достигать даже 50 лет.
+        .tabs__content.info-card(data-tabs-target="characteristics") характеристики
+        .tabs__content.info-card(data-tabs-target="questions") Вопросы

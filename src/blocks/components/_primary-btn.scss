@@ -1,0 +1,15 @@
+.primary-btn {
+    display: block;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 13px;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #27ae60;
+    border-radius: 6px;
+    padding: 8px 16px;
+    transition: background-color 0.3s;
+    &:hover {
+        background-color: #298a52;
+    }
+}

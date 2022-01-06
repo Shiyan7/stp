@@ -1,0 +1,52 @@
+.questions {
+    &__container {
+        &--2 {
+            padding-bottom: 43px;
+        }
+    }
+    &__title {
+        &--2 {
+            margin-bottom: 6px;
+            line-height: 45px;
+            font-size: 40px;
+        }
+    }
+    &-form {
+        &--2 {
+            max-width: 868px;
+            border: 1px dashed #F7F896;
+            border-radius: 3px;
+            padding: 24px;
+            padding-bottom: 5px;
+        }
+        &__row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+        &__label {
+            &--2 {
+                margin: 0;
+                margin-right: 24px;
+                span {
+                    display: none;
+                }
+            }
+        }
+        &__input {
+            &--2 {
+                width: 100%;
+            }
+        }
+        &__desc {
+            &--2 {
+                justify-content: center;
+                width: 100%;
+                max-width: 100%;
+                padding-right: 0;
+            }
+        }
+    }
+}

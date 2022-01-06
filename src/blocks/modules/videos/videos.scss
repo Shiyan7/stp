@@ -1,0 +1,52 @@
+.videos {
+    background-color: #253342;
+    &__container {
+        padding-top: 42px;
+        padding-bottom: 42px;
+    }
+
+    &__title {
+        text-align: center;
+        color: #fff;
+        margin-bottom: 25px;
+    }
+
+    &__item {
+        height: auto;
+        border-radius: 8px;
+        overflow: hidden;
+        .video__iframe {
+            min-height: 100%;
+        }
+        .video__image {
+            height: 199px;
+        }
+    }
+
+    &-slider {
+        &__wrapper {
+            margin-bottom: 40px;
+        }
+        &__controls {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        &__btn {
+            display: block;
+            width: 8px;
+            height: 14px;
+            background-color: transparent;
+            background-repeat: no-repeat;
+            background-size: cover;
+            &--prev {
+                background-image: url("data:image/svg+xml,%3Csvg width='8' height='15' viewBox='0 0 8 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.64465 2.85588L2.9309 7.56962L7.64465 12.2834C8.11845 12.7572 8.11845 13.5225 7.64465 13.9964C7.17084 14.4702 6.40547 14.4702 5.93166 13.9964L0.355353 8.42004C-0.118451 7.94623 -0.118451 7.18086 0.355353 6.70705L5.93166 1.13074C6.40547 0.65694 7.17084 0.65694 7.64465 1.13074C8.1063 1.60455 8.11845 2.38207 7.64465 2.85588Z' fill='%235E7288'/%3E%3C/svg%3E%0A");
+            }
+            &--next {
+                background-image: url("data:image/svg+xml,%3Csvg width='8' height='15' viewBox='0 0 8 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.355353 2.85588L5.0691 7.56962L0.355353 12.2834C-0.118451 12.7572 -0.118451 13.5225 0.355353 13.9964C0.829157 14.4702 1.59453 14.4702 2.06834 13.9964L7.64465 8.42004C8.11845 7.94623 8.11845 7.18086 7.64465 6.70705L2.06834 1.13074C1.59453 0.65694 0.829157 0.65694 0.355353 1.13074C-0.106302 1.60455 -0.118451 2.38207 0.355353 2.85588Z' fill='%235E7288'/%3E%3C/svg%3E%0A");
+            }
+        }
+    }
+}
