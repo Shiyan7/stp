@@ -65,17 +65,18 @@ header.header.lazy(data-bg="img/main-bg.png")
             .logo__desc МОНТАЖ ИНЖЕНЕРНЫХ СИСТЕМ
                 span И ПРОДАЖА ОБОРУДОВАНИЯ
         .header__actions(data-da=".header__top,768,last")
-            .tell.header__tell(data-da=".nav,1024,last")
-                a.tell__icon(href="#")
-                .tell__text
-                    a(href="tel:88122452346").tell__value.tell__value--bold 8 (812) 245-23-46
-                    a(href="tel:88122452346").tell__value 8 (812) 245-23-46
-                button.btn-reset.btn.modal-btn.tell__btn.primary-btn(data-graph-animation="fedIn" data-graph-path="first" data-graph-speed="0") Заказать звонок!
-            .mail.header__mail(data-da=".nav,1024,last")
-                a.mail__icon(href="#")
-                .mail__text
-                    span.mail__value Пн-Пт 9:00-19:00
-                    a.mail__value.mail__value--bold(href="mailto:info@stopradiators.ru") info@stopradiators.ru
+            .header__actions-wrapper(data-da=".nav,1024,last")
+                .tell.header__tell
+                    a.tell__icon(href="#")
+                    .tell__text
+                        a(href="tel:88122452346").tell__value.tell__value--bold 8 (812) 245-23-46
+                        a(href="tel:88122452346").tell__value 8 (812) 245-23-46
+                    button.btn-reset.btn.modal-btn.tell__btn.primary-btn(data-graph-animation="fedIn" data-graph-path="first" data-graph-speed="0") Заказать звонок!
+                .mail.header__mail
+                    a.mail__icon(href="#")
+                    .mail__text
+                        span.mail__value Пн-Пт 9:00-19:00
+                        a.mail__value.mail__value--bold(href="mailto:info@stopradiators.ru") info@stopradiators.ru
             .cart.header__cart
                 a.cart__info(href="#")
                     +icon("cart")
@@ -146,22 +147,23 @@ header.header.lazy(data-bg="img/main-bg.png")
             input.search-form__input(name="s" value="" placeholder="Поиск по сайту")
             button.btn-reset.search-form__btn(type="submit")
                 +icon("search")
-    .container.header__container
-        .swiper-container.header-slider
-            .swiper-wrapper
-                .swiper-slide.header-slide.header-slide--1
-                    .header-slide__bg.header-slide__bg--1.lazy(data-bg="img/hero-bg.png")
-                    .header-slide__content
-                        span.header-slide__subtitle Бесплатная доставка по Санкт-Петербургу
-                        h1.header-slide__title АКЦИЯ! Выгодная цена оборудования с монтажом!
-                        p.header-slide__desc При покупке котла, или другого оборудования, вы можете получить его бесплатный монтаж специалистами или значительную скидку!
-                .swiper-slide.header-slide.header-slide--2
-                    .header-slide__bg.header-slide__bg--2.lazy(data-bg="img/hero-bg-2.png")
-                    .header-slide__content
-                        span.header-slide__subtitle Якорная скоба в обоймах 2,5 рубля за шт.
-                        h1.header-slide__title 500 шт в коробке. 1250 рулей за коробку!
-                        p.header-slide__desc При покупке котла, или другого оборудования, вы можете получить его бесплатный монтаж специалистами или значительную скидку!
-            .slider-controls.header__slider-controls
-                button.btn-reset.slider-controls__btn.slider-controls__btn--prev.header__slider-btn.header__slider-btn--prev
-                .slider-controls__pag.header__slider-pag
-                button.btn-reset.slider-controls__btn.slider-controls__btn--next.header__slider-btn.header__slider-btn--next
+    if page === 'index'
+        .container.header__container
+            .swiper-container.header-slider
+                .swiper-wrapper
+                    .swiper-slide.header-slide.header-slide--1
+                        .header-slide__bg.header-slide__bg--1.lazy(data-bg="img/hero-bg.png")
+                        .header-slide__content
+                            span.header-slide__subtitle Бесплатная доставка по Санкт-Петербургу
+                            h1.header-slide__title АКЦИЯ! Выгодная цена оборудования с монтажом!
+                            p.header-slide__desc При покупке котла, или другого оборудования, вы можете получить его бесплатный монтаж специалистами или значительную скидку!
+                    .swiper-slide.header-slide.header-slide--2
+                        .header-slide__bg.header-slide__bg--2.lazy(data-bg="img/hero-bg-2.png")
+                        .header-slide__content
+                            span.header-slide__subtitle Якорная скоба в обоймах 2,5 рубля за шт.
+                            h1.header-slide__title 500 шт в коробке. 1250 рулей за коробку!
+                            p.header-slide__desc При покупке котла, или другого оборудования, вы можете получить его бесплатный монтаж специалистами или значительную скидку!
+                .slider-controls.header__slider-controls
+                    button.btn-reset.slider-controls__btn.slider-controls__btn--prev.header__slider-btn.header__slider-btn--prev
+                    .slider-controls__pag.header__slider-pag
+                    button.btn-reset.slider-controls__btn.slider-controls__btn--next.header__slider-btn.header__slider-btn--next

@@ -301,7 +301,7 @@
         }
         &__value {
             text-align: right;
-            max-width: 207px;
+            max-width: 270px;
             color: #222F3C;
             font-size: 14px;
             line-height: 20px;
@@ -508,8 +508,10 @@
     }
     &-tabs {
         &__item {
-            &:not(:last-child) {
-                border-right: 1px solid rgba(201, 204, 207, 0.44);
+            .tabs__btn {
+                @media (max-width: 375px) {
+                    font-size: 11px;
+                }
             }
         }
     }

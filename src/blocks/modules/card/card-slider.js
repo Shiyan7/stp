@@ -7,11 +7,18 @@ import Swiper, {
     Pagination,
     Scrollbar,
 } from 'swiper/core';
-import fslightbox from "fslightbox";
 
 Swiper.use([Navigation, Pagination, Scrollbar]);
 
 document.addEventListener("DOMContentLoaded", () => {
+
+    const cardZoom = document.querySelector(".card__zoom");
+
+    cardZoom?.addEventListener("click", () => {
+        let idx = cardSliderMain.realIndex;
+        /* eslint-disable */
+        fsLightboxInstances['card'].open(idx);
+    })
 
     const cardSliderThumbs = new Swiper(".card-slider__nav", {
         slidesPerView: 'auto',
@@ -33,6 +40,6 @@ document.addEventListener("DOMContentLoaded", () => {
         },
         thumbs: {
             swiper: cardSliderThumbs,
-        }
+        },
     });
 });

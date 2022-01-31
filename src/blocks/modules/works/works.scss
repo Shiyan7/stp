@@ -31,7 +31,9 @@
     }
 
     &__link {
-        padding: 13px 24px;
+        padding: 14.5px 24px;
+        font-size: 15px;
+        line-height: 13px;
     }
 
     &__list {
@@ -41,7 +43,6 @@
 }
 
 .work {
-
     &__item {
         width: 100%;
         max-width: 25%;

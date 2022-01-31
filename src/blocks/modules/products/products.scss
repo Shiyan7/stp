@@ -54,8 +54,20 @@
     }
 
     &__item {
+        position: relative;
         width: 33.333%;
         margin-bottom: -1px;
+        &:not(:last-child) {
+            &:after {
+                @include pseudo();
+                position: absolute;
+                bottom: -3px;
+                right: 0;
+                width: 1px;
+                height: 100%;
+                background-image: url("data:image/svg+xml,%3Csvg width='1' height='65' viewBox='0 0 1 65' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='0.5' y1='64.7139' x2='0.5' y2='0.713867' stroke='url(%23paint0_linear_137_64)'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_137_64' x1='1' y1='11.2942' x2='1' y2='64.8452' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23C9CCCF' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23C9CCCF' stop-opacity='0.44'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A");
+            }
+        }
     }
 
     &__btn {

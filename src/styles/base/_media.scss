@@ -6,14 +6,6 @@
 }
 @media (min-width: 1025px) {
     .nav {
-        &__item {   
-            &:hover {
-                .nav-dropdown {
-                    opacity: 1;
-                    visibility: visible;
-                }
-            }
-        }
         &__link {
             &:hover {
                 background-color: #27ae60;
@@ -257,6 +249,7 @@
         overflow-y: auto;
         overflow-x: hidden;
         display: flex;
+        min-width: 320px;
         flex-direction: column;
         &.show {
             visibility: visible;
@@ -275,34 +268,18 @@
             svg {
                 margin-left: auto;
             }
-            &:hover {
-                background-color: #27ae60;
-                color: #fff !important;
-                svg {
-                    fill: #fff;
-                    transform: rotate(180deg);
-                }
-            }
         }
 
         &__item {
             width: 100%;
             &--dropdown {
-                &:hover .nav__link {
+                &.active {
                     background-color: transparent;
                     color: #798797 !important;
                     svg {
                         fill: #27ae60;
                         transform: rotate(0deg);
                     }
-                }
-            }
-            &.active .nav__link {
-                background-color: #27ae60;
-                color: #fff !important;
-                svg {
-                    fill: #fff;
-                    transform: rotate(180deg);
                 }
             }
         }
@@ -405,9 +382,6 @@
         &__video {
             width: vw(600);
             height: vw(340);
-        }
-        &__desc {
-            max-width: vw(650);
         }
     }
     .services {

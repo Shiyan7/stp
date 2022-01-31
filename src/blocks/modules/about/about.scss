@@ -30,13 +30,17 @@
     &__desc {
         margin: 0;
         font-size: 14px;
-        max-width: 469px;
+        max-width: 550px;
         font-family: "Roboto", sans-serif;
         line-height: 21px;
         letter-spacing: 0.008em;
         font-weight: 500;
         color: #798797;
         margin-bottom: 24px;
+
+        @media (max-width: 1280px) {
+            max-width: vw(680);
+        }
 
         span {
             color: #BB8E34;
@@ -65,8 +69,9 @@
         top: 50%;
         transform: translateY(-50%);
         right: 20px;
-        width: calc(600px - 24px);
-        height: calc(338px - 12px);
+        width: calc(564px - 24px);
+        height: calc(327px - 12px);
         padding: 12px;
+        min-height: 150px;
     }
 }

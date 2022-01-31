@@ -9,13 +9,23 @@
     &__item {
         position: relative;
         color: #798797;
-        /* &--dropdown {
-            &:nth-child(2) {
-                .nav__link {
-                    padding-right: 55px;
-                }
+
+        &:not(:last-child) {
+            margin-right: 2px;
+
+            @media (max-width: 1024px) {
+                margin-right: 0;
             }
-        } */
+        }
+
+        &.active .nav__link {
+            background-color: #27ae60;
+            color: #fff !important;
+            svg {
+                fill: #fff;
+                transform: rotate(180deg);
+            }
+        }
     }
 
     &__link {
@@ -46,6 +56,12 @@
         transition: opacity 0.3s, visibility 0.3s;
         opacity: 0;
         visibility: hidden;
+
+        &.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
         &__item {
             
             &:not(:last-child) .nav-dropdown__link {
