@@ -23,14 +23,14 @@
     <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
     <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/main.min.css">
   </head>
   <body>
     <div class="site-container">
       <header class="header lazy" data-bg="img/main-bg.png">
         <div class="header__top">
           <button class="btn-reset burger"><span class="burger__line"></span></button>
-          <div class="header__left"><a class="link-home" href="/">
+          <div class="header__left"><a class="link-home" href="/" aria-label="Ссылка на главную страницу">
               <svg class="svg-icon home">
                 <use xlink:href="./img/sprites/sprite.svg#home"></use>
               </svg></a>
@@ -72,8 +72,8 @@
               </svg>Санкт-Петербург</a><a class="header__link" href="#">
               <svg class="svg-icon favorites">
                 <use xlink:href="./img/sprites/sprite.svg#favorites"></use>
-              </svg>В избраном (1)</a>
-            <div class="header-control"><a class="header-control__cab" href="#">
+              </svg>В избранном (1)</a>
+            <div class="header-control"><a class="header-control__cab" href="#" aria-label="Войти в кабинет">
                 <svg class="svg-icon account">
                   <use xlink:href="./img/sprites/sprite.svg#account"></use>
                 </svg></a><a class="header-control__link" href="#">Вход<span class="header-control__sep">/</span>Регистрация</a></div>
@@ -83,12 +83,14 @@
             <div class="logo__text"><span class="logo__title">STOPRADIATORS</span><span class="logo__subtitle">все инженерные сети</span></div>
             <div class="logo__desc">МОНТАЖ ИНЖЕНЕРНЫХ СИСТЕМ<span>И ПРОДАЖА ОБОРУДОВАНИЯ</span></div></a>
           <div class="header__actions" data-da=".header__top,768,last">
-            <div class="tell header__tell" data-da=".nav,1024,last"><a class="tell__icon" href="#"></a>
-              <div class="tell__text"><a class="tell__value tell__value--bold" href="tel:88122452346">8 (812) 245-23-46</a><a class="tell__value" href="tel:88122452346">8 (812) 245-23-46</a></div>
-              <button class="btn-reset btn modal-btn tell__btn primary-btn" data-graph-animation="fedIn" data-graph-path="first" data-graph-speed="0">Заказать звонок!</button>
-            </div>
-            <div class="mail header__mail" data-da=".nav,1024,last"><a class="mail__icon" href="#"></a>
-              <div class="mail__text"><span class="mail__value">Пн-Пт 9:00-19:00</span><a class="mail__value mail__value--bold" href="mailto:info@stopradiators.ru">info@stopradiators.ru</a></div>
+            <div class="header__actions-wrapper" data-da=".nav,1024,last">
+              <div class="tell header__tell"><a class="tell__icon" href="#"></a>
+                <div class="tell__text"><a class="tell__value tell__value--bold" href="tel:88122452346">8 (812) 245-23-46</a><a class="tell__value" href="tel:88122452346">8 (812) 245-23-46</a></div>
+                <button class="btn-reset btn modal-btn tell__btn primary-btn" data-graph-animation="fedIn" data-graph-path="first" data-graph-speed="0">Заказать звонок!</button>
+              </div>
+              <div class="mail header__mail"><a class="mail__icon" href="#"></a>
+                <div class="mail__text"><span class="mail__value">Пн-Пт 9:00-19:00</span><a class="mail__value mail__value--bold" href="mailto:info@stopradiators.ru">info@stopradiators.ru</a></div>
+              </div>
             </div>
             <div class="cart header__cart"><a class="cart__info" href="#">
                 <svg class="svg-icon cart">
@@ -214,6 +216,11 @@
                       <use xlink:href="./img/sprites/sprite.svg#favorite"></use>
                     </svg>
                   </button>
+                  <button class="btn-reset product__zoom card__zoom">
+                    <svg class="svg-icon zoom">
+                      <use xlink:href="./img/sprites/sprite.svg#zoom"></use>
+                    </svg>
+                  </button>
                   <div class="swiper-wrapper card-slider__wrapper">
                     <div class="swiper-slide card-slider__slide"><a data-fslightbox="card" href="img/card-1.jpg"><img src="img/card-1.jpg" alt=""></a></div>
                     <div class="swiper-slide card-slider__slide"><a data-fslightbox="card" href="img/product-1.jpg"><img src="img/product-1.jpg" alt=""></a></div>
@@ -307,7 +314,7 @@
                       </div>
                       <div class="card-ways__row"><span class="card-ways__desc">Доставка в пределах КАД:</span><span class="card-ways__value">600р, при заказе от 3000р! </span></div>
                       <div class="card-ways__row"><span class="card-ways__desc">Доставка за пределами КАД: </span><span class="card-ways__value">600р +40р за 1 км при заказе от 3000р! </span></div>
-                      <div class="card-ways__row"><span class="card-ways__desc">Доставка транспортными компаниями по России</span><span class="card-ways__value">От 900р, в зависимости товара и тарифа перевозчика!</span></div>
+                      <div class="card-ways__row"><span class="card-ways__desc">Доставка транспортными компаниями по России</span><span class="card-ways__value">От 900р, в зависимости от товара <br> и тарифа перевозчика!</span></div>
                     </div>
                   </div>
                 </div>
@@ -1288,7 +1295,7 @@
         </div>
       </div>
     </div>
-    <script src="js/vendor.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/vendor.min.js"></script>
+    <script src="js/main.min.js"></script>
   </body>
 </html>
