@@ -40,6 +40,11 @@
 
     &-slider {
         width: 100%;
+        margin-bottom: 37px;
+
+        @media (max-width: 576px) {
+            margin-bottom: 0;
+        }
     }
     &__container {
         display: flex;
@@ -87,7 +92,7 @@
     &__grid {
         display: flex;
         flex-wrap: wrap;
-        margin: 0 -12px 40px;
+        margin: 0 -12px 3px;
         width: calc(100% + 24px);
     }
 
