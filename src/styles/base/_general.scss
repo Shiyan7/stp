@@ -1,5 +1,6 @@
 html {
     box-sizing: border-box;
+    font-family: "RobotoCondensed", sans-serif !important;
 }
 
 *, *:after *:before {
@@ -9,7 +10,6 @@ html {
 body {
     min-width: 320px;
     background-color: #fff;
-    font-family: "RobotoCondensed", sans-serif;
     counter-reset: section;
     font-weight: 400;
     font-size: 13px;
