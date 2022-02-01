@@ -15,9 +15,21 @@ mainMenuLink?.addEventListener("click", (e) => {
 
 for(let i = 0; i < navItem.length; i++) {
     let el = navItem[i];
+    let flag = 0;
     el.addEventListener("click", (e) => {
-        e.currentTarget.querySelector(".nav-dropdown").classList.toggle("show");
-        e.currentTarget.classList.toggle("active");
+
+        document.querySelector(".nav-dropdown.show")?.classList.remove("show")
+        document.querySelector(".nav__item.active")?.classList.remove("active")
+
+        if (flag == 0) {
+            e.currentTarget.querySelector(".nav-dropdown").classList.toggle("show");
+            e.currentTarget.classList.toggle("active");
+            flag++
+        } else {
+            e.currentTarget.querySelector(".nav-dropdown").classList.remove("show");
+            e.currentTarget.classList.remove("active");
+            flag--
+        }
     });
 
     document.addEventListener("click", e => {
